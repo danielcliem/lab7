@@ -69,6 +69,7 @@ function initializePage() {
 			'date':  date,
 			'summary': summary
 		};
+		console.log(json);
 		$.post('/project/new', json, function() {
 			window.location.href = '/'; // reload the page
 		});
